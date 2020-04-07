@@ -6,7 +6,7 @@ export const R_CIDR = /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}(
 export const R_MAC = /^((([a-fA-F0-9][a-fA-F0-9]+[-]){5}|([a-fA-F0-9][a-fA-F0-9]+[:]){5})([a-fA-F0-9][a-fA-F0-9])$)|(^([a-fA-F0-9][a-fA-F0-9][a-fA-F0-9][a-fA-F0-9]+[.]){2}([a-fA-F0-9][a-fA-F0-9][a-fA-F0-9][a-fA-F0-9]))$/;
 export const R_PATH_LAST_PART = /\/[^/]*$/;
 export const R_UNIX_ABSOLUTE_PATH = /^\/([A-z0-9-_+]+\/)*([A-z0-9]+(\.[A-z0-9]+)?)$/;
-export const R_WIN_ABSOLUTE_PATH = /^[a-zA-Z]:\\[\\\S|*\S]?.*$/;
+export const R_WIN_ABSOLUTE_PATH = /^([a-zA-Z]:)?(\\|\/)(?:[^\\/:*?"<>|\r\n]+\\)*[^\\/:*?"<>|\r\n]*$/;
 
 export const STATS_NAMES = {
     avg_processing_time: 'average_processing_time',
